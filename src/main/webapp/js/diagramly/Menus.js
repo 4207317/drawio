@@ -4632,10 +4632,10 @@
 				
 				menu.addSeparator(parent);
 
-				if (langMenu != null && (urlParams['embed'] != '1' || urlParams['lang'] == null))
-				{
-					editorUi.menus.addSubmenu('language', menu, parent);
-				}
+				// if (langMenu != null && (urlParams['embed'] != '1' || urlParams['lang'] == null))
+				// {
+				// 	editorUi.menus.addSubmenu('language', menu, parent);
+				// }
 				
 				editorUi.menus.addSubmenu('units', menu, parent);
 				editorUi.menus.addMenuItems(menu, ['-', 'copyConnect',
@@ -4671,10 +4671,10 @@
 			}
 			else
 			{
-				if (urlParams['embed'] != '1' || urlParams['lang'] == null)
-				{
-					this.addSubmenu('language', menu, parent);
-				}
+				// if (urlParams['embed'] != '1' || urlParams['lang'] == null)
+				// {
+				// 	this.addSubmenu('language', menu, parent);
+				// }
 				
 				if ((urlParams['embed'] != '1' || urlParams['atlas'] == '1') &&
 					Editor.currentTheme != 'atlas' && (Editor.isDarkMode() ||
